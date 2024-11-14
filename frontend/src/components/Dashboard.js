@@ -32,9 +32,9 @@ const Dashboard = () => {
     });
 
     return (
-        <div>
+        <div className="dashboard">
             <h1>Task Dashboard</h1>
-            <div>
+            <div className="filter-controls">
                 <input
                     type="text"
                     placeholder="Search tasks"
