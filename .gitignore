@@ -1,0 +1,64 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Build directories
+dist/
+build/
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# IDE settings
+.idea/
+*.iml
+
+# React
+.cache/
+public/static/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Production
+out/
+
+# Debug
+*.stackdump
+
+# Optional npm cache directory
+.npm
+
+# Local development
+.env.development
+.env.production
+.env.test
+
+# Mac system files
+.DS_Store
+
+# Linux files
+*~
