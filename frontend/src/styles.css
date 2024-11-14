@@ -1,0 +1,150 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main App Container */
+.App {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f7fa;
+}
+
+/* Dashboard */
+.dashboard {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dashboard h1 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Task Form */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form select,
+.task-form textarea,
+.task-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.task-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-form button:hover {
+    background-color: #45a049;
+}
+
+/* Task List */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.task-item h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.task-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.task-item button {
+    padding: 8px 10px;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-item button.mark-complete {
+    background-color: #2196F3;
+}
+
+.task-item button.mark-complete:hover {
+    background-color: #0b7dda;
+}
+
+.task-item button.delete-task {
+    background-color: #f44336;
+}
+
+.task-item button.delete-task:hover {
+    background-color: #da190b;
+}
+
+/* Search and Filter Controls */
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-controls input,
+.filter-controls select {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 15px;
+    }
+
+    .task-form button,
+    .task-item button {
+        font-size: 0.85em;
+        padding: 6px 8px;
+    }
+
+    .task-item h3 {
+        font-size: 1em;
+    }
+}
