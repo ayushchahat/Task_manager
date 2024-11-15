@@ -36,31 +36,40 @@ Ensure the following are installed on your system:
 - **Node.js**: [Download Node.js](https://nodejs.org/)
 - **MongoDB Atlas**: [Sign up for MongoDB Atlas](https://www.mongodb.com/cloud/atlas) (for cloud database)
 - **Code Editor**: [Visual Studio Code](https://code.visualstudio.com/) (recommended)
-### 📁 Project Structure
--**Frontend (client/src):**
-src
-├── App.js                # Main React component handling routing and layout
-├── components
-│   ├── Dashboard.js      # Task Dashboard component displaying tasks
-│   ├── TaskForm.js       # Form component to add or edit tasks
-│   └── TaskList.js       # List component to display all tasks
-└── services
-    └── taskService.js    # Service layer for handling API calls to backend
--**Backend (server):**
+## 📁 Project Structure
+
+### Frontend (`client/src`):
+
+
+client
+└── src
+    ├── App.js                  # Main React component handling routing and layout
+    ├── components              # Folder for reusable UI components
+    │   ├── Dashboard.js        # Task Dashboard component displaying tasks
+    │   ├── TaskForm.js         # Form component to add or edit tasks
+    │   └── TaskList.js         # List component to display all tasks
+    └── services
+        └── taskService.js      # Service layer for handling API calls to backend
+
+
+### Backend (`server`):
+
+
 server
-├── .env                  # Environment variables file
-├── server.js             # Main server file
-├── config
-│   └── db.js             # MongoDB connection setup
-├── models
-│   └── Task.js           # Task schema and model definition
-└── routes
-    └── taskRoutes.js     # API routes for task management
-### 📖 Assumptions
+├── .env                        # Environment variables file
+├── server.js                   # Main server file
+├── config                      # Folder for configuration files
+│   └── db.js                   # MongoDB connection setup
+├── models                      # Folder for Mongoose schemas and models
+│   └── Task.js                 # Task schema and model definition
+└── routes                      # Folder for API routes
+    └── taskRoutes.js           # API routes for task management
+
+## 📖 Assumptions
 -**Default Priority**: All tasks default to "Medium" priority unless specified.
 -**Data Storage**: Tasks are stored on the frontend using local storage to prevent data loss on refresh.
 -**Responsive Design**: The UI adapts to both desktop and mobile screens for a seamless experience.
-### Steps
+## Steps
 
 1. **Clone the repository**:
    ```bash
